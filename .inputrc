@@ -1,0 +1,4 @@
+# csh style up/down array history search
+"\e[B": history-search-forward
+"\e[A": history-search-backward
+

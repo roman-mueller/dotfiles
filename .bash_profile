@@ -10,3 +10,6 @@ fi
 PATH=$PATH:$HOME/bin
 
 export PATH
+
+export INPUTRC=~/.inputrc
+
