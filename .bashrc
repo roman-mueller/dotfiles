@@ -12,3 +12,5 @@ SVN_EDITOR='/usr/bin/vim'
 export EDITOR
 export SVN_EDITOR
 
+alias weather='/usr/bin/curl wttr.in/Munich'
+
