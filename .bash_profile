@@ -7,6 +7,8 @@ fi
 
 # User specific environment and startup programs
 
+export HOMEBREW_NO_ANALYTICS=1
+
 PATH=$PATH:$HOME/bin
 
 export PATH
