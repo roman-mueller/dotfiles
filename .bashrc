@@ -14,3 +14,8 @@ export SVN_EDITOR
 
 alias weather='/usr/bin/curl wttr.in/Munich'
 
+# When the shell exits, append to the history file instead of overwriting it
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+shopt -s histappend
+
