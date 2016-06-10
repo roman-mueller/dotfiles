@@ -16,9 +16,9 @@ export PATH
 export INPUTRC=~/.inputrc
 
 # At work ~/.ssh/global_known_hosts is the collection of all Puppet exported
-# ssh host key resources. Add all servers to ssh autocomplete.
+# ssh host key resources. Add all servers to ssh / sftp autocomplete.
 if [ -f ~/.ssh/global_known_hosts ]; then
     complete -W "$(echo `cat ~/.ssh/global_known_hosts | cut -f 1 -d ' ' | \
-        sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh
+        sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh sftp
 fi
 
