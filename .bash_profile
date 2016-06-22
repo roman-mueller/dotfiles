@@ -19,6 +19,6 @@ export INPUTRC=~/.inputrc
 # ssh host key resources. Add all servers to ssh / sftp autocomplete.
 if [ -f ~/.ssh/global_known_hosts ]; then
     complete -W "$(echo `cat ~/.ssh/global_known_hosts | cut -f 1 -d ' ' | \
-        sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh sftp
+        sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh sftp ping
 fi
 
