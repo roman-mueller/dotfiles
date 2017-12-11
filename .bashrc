@@ -23,3 +23,9 @@ export SYSTEMD_EDITOR="/bin/vi"
 # Disable automatic piping to less with annoying magic options
 export SYSTEMD_PAGER="/bin/less"
 export SYSTEMD_LESS="FR"
+
+# http://www.commandlinefu.com/commands/view/12151/get-shellcode-of-the-binary-using-objdump
+# convert binary to shellcode, works on both Linux and MacOS
+function objtoshell() {
+    for i in $(objdump -d $1 |grep "^ " |cut -f2); do echo -n '\x'$i; done; echo
+}
