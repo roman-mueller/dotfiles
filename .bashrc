@@ -12,7 +12,7 @@ SVN_EDITOR='/usr/bin/vim'
 export EDITOR
 export SVN_EDITOR
 
-alias weather='/usr/bin/curl wttr.in/Munich'
+alias weather='/usr/bin/curl https://wttr.in/Munich'
 alias realip='/usr/bin/curl https://icanhazip.com'
 
 # When the shell exits, append to the history file instead of overwriting it
