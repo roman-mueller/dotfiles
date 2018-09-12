@@ -20,6 +20,9 @@ export HISTSIZE=100000
 export HISTFILESIZE=100000
 shopt -s histappend
 
+# Disable programmable completion
+shopt -u progcomp
+
 export SYSTEMD_EDITOR="/bin/vi"
 # Disable automatic piping to less with annoying magic options
 export SYSTEMD_PAGER="/bin/less"
