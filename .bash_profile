@@ -9,7 +9,7 @@ fi
 
 export HOMEBREW_NO_ANALYTICS=1
 
-PATH=$PATH:$HOME/bin
+PATH=$PATH:/usr/local/sbin:$HOME/bin
 
 export PATH
 
