@@ -25,3 +25,5 @@ defaults write com.apple.dock wvous-tr-modifier -int 0
 defaults write com.apple.dock wvous-br-corner -int 2
 defaults write com.apple.dock wvous-br-modifier -int 0
 
+# disable showing the language next to the cursor if keyboard language is changed
+defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled 0
